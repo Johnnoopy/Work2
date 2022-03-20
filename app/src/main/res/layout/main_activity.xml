@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="63dp" />
+
+    <ImageButton
+        android:id="@+id/Fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        app:srcCompat="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/Fragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Fragment1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        app:srcCompat="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/Fragment3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+
+        app:layout_constraintLeft_toRightOf="@id/Fragment2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        app:srcCompat="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/Fragment4"
+        android:layout_width="64dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="56dp"
+        app:layout_constraintLeft_toRightOf="@id/Fragment3"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07934336" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/Fragment"
+        android:name="com.example.work2.ui.main.Fragment1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
