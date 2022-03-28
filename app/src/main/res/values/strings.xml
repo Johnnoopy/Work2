@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Work2</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <integer-array name="image_list">
+        <item>@drawable/ic_battery</item>
+        <item>@drawable/ic_creditcard</item>
+        <item>@drawable/ic_eraser</item>
+        <item>@drawable/ic_file</item>
+        <item>@drawable/ic_game</item>
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_money</item>
+        <item>@drawable/ic_shit</item>
+        <item>@drawable/ic_work</item>
+    </integer-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
